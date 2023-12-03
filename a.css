@@ -1,0 +1,141 @@
+body {
+  background-color: rgb(85, 106, 44);
+  background-position: center center;
+  font-family: "Optima";
+  display: flex;
+}
+main
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+a{
+  color: rgb(85, 106, 44);
+}
+
+h1{
+  font-size: 36px; 
+  font-weight: 400; 
+  font-style: italic; 
+  line-height: 44px; 
+  margin: 0 0 12px; 
+  text-align: center;
+}
+
+p{
+  font-family: 'Droid Sans', sans-serif; 
+  font-size: 18px; 
+  font-weight: 400; 
+  line-height: 24px; 
+  margin: 0 0 14px;
+}
+
+ul
+{
+  font-size: 20px;
+}
+
+li
+{
+  font-weight: bold;
+}
+
+img
+{
+  cursor: pointer;
+}
+
+.cimek
+{
+  color: black;
+  background-color: rgba(255, 255, 255, 0.29);
+  border-radius: 5px;
+}
+
+.moving-elements {
+  animation: moving-elements 1s infinite linear;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-item {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.k_border
+{
+  border: 5cap solid rgba(12, 12, 12, 0);
+  border-width: 1px;
+  color: rgba(207, 189, 128, 0);
+  border-radius: 5px;
+}
+
+.k_border:hover{
+  background-color: rgb(207, 188, 128);
+}
+
+.tartalom{
+  background-color: rgba(255, 255, 255, 0.29);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.tartalo_1
+{
+  margin-top: 10%;
+  margin-left: 30%;
+  margin-left: 15%;
+}
+
+.szoveg_doboz
+{
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 2.5px 2.5px rgba(0, 0, 0, 0.403);
+  padding: 3px 3px 3px 3px;
+  margin: 3px 3px 3px 3px;
+  background-size: 100%;
+}
+
+/* Okostelefon */
+@media (max-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1200px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  section {
+    width: 50%;
+  }
+}
+
+/* Nagyobb kijelző */
+@media (min-width: 1200px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  section {
+    width: 33.33%;
+  }
+}
